@@ -1,0 +1,148 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html,body { height: 100%; }
+body {
+  font-family: -apple-system, "Helvetica Neue", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Arial, sans-serif;
+  background: #ffffff;
+  color: #111;
+  display: flex; 
+  flex-direction: column; 
+}
+
+/* 🌟 「日本語」表示のスタイル 🌟 */
+.lang-selector {
+  width: 100%;
+  text-align: center;
+  padding-top: 20px; /* 上部のスペースを調整 */
+  padding-bottom: 20px;
+  color: #8e8e8e;
+  font-size: 13px; /* フォントサイズを調整 */
+}
+.lang-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 40px 0; /* 下部のpaddingのみ調整 */
+  flex-grow: 1; 
+}
+.top-space { 
+    display: none; 
+}
+
+/* 🌟 ロゴのサイズと上部の配置を完全に一致させる 🌟 */
+.logo { 
+  width: 100px; /* サイズを画像に合わせる */
+  margin-bottom: 40px; /* 下のスペースを大きく */
+  margin-top: 10px; /* 上のスペースを調整 */
+}
+
+.form {
+  width: 100%;
+  max-width: 480px; 
+  padding: 0 40px; /* 左右の余白を調整 (画像に基づき約40px) */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 🌟 入力フィールドのスタイルを完全に一致させる 🌟 */
+.input {
+  width: 100%;
+  height: 44px; /* 高さを合わせる */
+  padding: 0 12px; /* 左右のpaddingを調整 */
+  margin: 4px 0; /* 上下の間隔を調整 */
+  border-radius: 5px; /* 角丸を調整 */
+  border: 1px solid #dbdbdb; /* 枠線を薄いグレーに統一 */
+  font-size: 14px; 
+  outline: none;
+  background: #fafafa; /* 背景色を薄いグレーに (Instagramの標準的な入力フィールドの色) */
+  color: #262626;
+}
+.input:focus {
+  border-color: #dbdbdb; /* フォーカス時の枠線は変わらない */
+  box-shadow: none;
+  background: #ffffff; /* フォーカス時に背景を白に */
+}
+
+.btn {
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-weight: 600; /* 太字に */
+}
+/* 🌟 ログインボタンのスタイルを完全に一致させる 🌟 */
+.btn-primary {
+  width: 100%;
+  max-width: 100%;
+  background: #0095f6;
+  color: white;
+  margin-top: 8px; 
+  height: 44px; 
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px; 
+}
+
+/* 🌟 パスワードを忘れた場合のリンク 🌟 */
+.helper {
+  margin-top: 15px; 
+  font-size: 13px; 
+  color: #00376b; /* 濃い青色 */
+  text-align: center;
+}
+.helper a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 🌟 アカウント作成ボタンのコンテナ 🌟 */
+.create-box {
+  width: 100%;
+  max-width: 480px;
+  margin-top: 100px; /* 大きなスペースを確保 */
+  display: flex;
+  justify-content: center;
+  padding: 0 40px; /* フォームと同じ左右の余白 */
+}
+
+/* 🌟 新しいアカウントを作成ボタンのスタイルを完全に一致させる 🌟 */
+.btn-outline {
+  width: 100%; 
+  max-width: 100%;
+  height: 44px; 
+  background: #ffffff;
+  border: 1px solid #dbdbdb; /* 薄いグレーの枠線 */
+  color: #0095f6; 
+  border-radius: 8px; 
+  font-size: 14px;
+}
+
+/* 🌟 フッターの調整 🌟 */
+.footer {
+  margin-top: 50px; /* スペースを調整 */
+  padding: 0 16px;
+  width: 100%;
+  text-align: center;
+}
+.brand {
+  font-weight: 600; 
+  color: #262626; 
+  font-size: 12px;
+}
+
+/* 必須のアクセシビリティ用クラス */
+.sr-only {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
